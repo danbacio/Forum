@@ -1,10 +1,11 @@
 package ro.mindit.forum.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import ro.mindit.forum.domain.User;
 import ro.mindit.forum.repository.UserDAO;
 
-
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired

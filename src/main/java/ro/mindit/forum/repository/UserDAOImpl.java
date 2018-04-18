@@ -51,6 +51,8 @@ public class UserDAOImpl implements UserDAO {
 
         SqlParameterSource namedParameters = new MapSqlParameterSource("userName", userName);
 
+
+
         return namedParameterJdbcTemplate.queryForObject(SQL, namedParameters, (resultSet, i) ->
                 new User(
                         resultSet.getInt("ID"),

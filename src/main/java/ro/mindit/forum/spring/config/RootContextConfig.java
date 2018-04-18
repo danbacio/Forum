@@ -17,10 +17,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
-/**
- * @author adrian.dafinoiu
- * @since 1/3/2018
- */
 @Configuration
 @EnableTransactionManagement
 @Import(ApplicationProperties.class)
@@ -65,7 +61,7 @@ public class RootContextConfig {
     Flyway flyway() {
         Flyway flyway = new Flyway();
         flyway.setBaselineOnMigrate(true);
-        flyway.setLocations("classpath:/db/migrations/");
+        flyway.setLocations("classpath:/db.migrations/");
         flyway.setDataSource(dataSource());
         return flyway;
     }

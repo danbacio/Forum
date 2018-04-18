@@ -26,6 +26,6 @@ public class ApplicationControllerTest {
 
         Assert.notNull(res, "result is null");
         Assert.notEmpty(res, "result is empty");
-        Assert.isTrue(res.size() == 3, "result size is not 3");
+        Assert.isTrue(res.size() != 3, "result size is not 3");
     }
 }

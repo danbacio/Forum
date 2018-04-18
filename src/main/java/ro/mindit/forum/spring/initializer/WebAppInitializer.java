@@ -1,29 +1,37 @@
 package ro.mindit.forum.spring.initializer;
 
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.ContextLoaderListener;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 import ro.mindit.forum.spring.config.RootContextConfig;
 import ro.mindit.forum.spring.config.WebMvcContextConfig;
 
-/**
- * This is the java version of the web.xml
- *
- * @author adrian.dafinoiu
- * @since 1/3/2018
- */
-public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+import javax.servlet.ServletContext;
+import javax.servlet.ServletRegistration;
+
+public class WebAppInitializer implements WebApplicationInitializer {
 
     @Override
-    protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{RootContextConfig.class};
+    public void onStartup(ServletContext container) {
+        // Create the 'root' Spring application context
+        AnnotationConfigWebApplicationContext rootContext =
+                new AnnotationConfigWebApplicationContext();
+        rootContext.register(RootContextConfig.class);
+
+        // Manage the lifecycle of the root application context
+        container.addListener(new ContextLoaderListener(rootContext));
+
+        // Create the dispatcher servlet's Spring application context
+        AnnotationConfigWebApplicationContext dispatcherContext =
+                new AnnotationConfigWebApplicationContext();
+        dispatcherContext.register(WebMvcContextConfig.class);
+
+        // Register and map the dispatcher servlet
+        ServletRegistration.Dynamic dispatcher =
+                container.addServlet("dispatcher", new DispatcherServlet(dispatcherContext));
+        dispatcher.setLoadOnStartup(1);
+        dispatcher.addMapping("/");
     }
 
-    @Override
-    protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{WebMvcContextConfig.class};
-    }
-
-    @Override
-    protected String[] getServletMappings() {
-        return new String[]{"/"};
-    }
 }

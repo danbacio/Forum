@@ -12,12 +12,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 
-/**
- * This is a configuration class for the REST API
- *
- * @author adrian.dafinoiu
- * @since 1/3/2018
- */
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = { "ro.mindit.forum.**" })

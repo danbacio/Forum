@@ -1,6 +1,9 @@
+C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\config\CookieInRequestInterceptor.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\repository\PostsDAOImpl.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\spring\config\WebMvcContextConfig.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\spring\initializer\WebAppInitializer.java
+C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\service\UserService.java
+C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\controller\UserController.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\repository\UserDAOImpl.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\service\ApplicationServiceImpl.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\controller\ApplicationController.java
@@ -8,6 +11,8 @@ C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\for
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\spring\config\ApplicationProperties.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\repository\UserDAO.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\domain\Posts.java
+C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\service\UserServiceImpl.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\spring\config\RootContextConfig.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\domain\User.java
+C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\config\WebMvcConfig.java
 C:\Users\Mindit\Desktop\mindit_spring_angular-master\src\main\java\ro\mindit\forum\service\ApplicationService.java

@@ -26,67 +26,67 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular-animate/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest:'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular-cookies/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular-resource/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular-route/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular-sanitize/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['components-font-awesome/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['lodash/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['jquery/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular-route/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     },
                     {
                         expand: true,
                         cwd: 'node_modules/',
                         src: ['angular-ui-bootstrap/**'],
-                        dest: 'src/main/webapp/lib/'
+                        dest: 'src/main/static/scripts/'
                     }
 
                 ]

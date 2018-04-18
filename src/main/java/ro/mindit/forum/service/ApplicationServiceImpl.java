@@ -6,10 +6,6 @@ import org.springframework.beans.factory.annotation.Value;
 import ro.mindit.forum.domain.User;
 import ro.mindit.forum.repository.UserDAO;
 
-/**
- * @author adrian.dafinoiu
- * @since 1/3/2018
- */
 @Service
 public class ApplicationServiceImpl implements ApplicationService{
 

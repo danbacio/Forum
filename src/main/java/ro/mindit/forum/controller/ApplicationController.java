@@ -12,10 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-/**
- * @author adrian.dafinoiu
- * @since 1/3/2018
- */
 @Controller
 public class ApplicationController {
 
